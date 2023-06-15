@@ -1,0 +1,98 @@
+* {
+  
+    font-family: 'Wix Madefor Text', sans-serif;
+    box-sizing: border-box;
+  
+  }
+  body{
+
+    background-color:  rgb(78, 75, 75);
+
+  }
+
+
+
+
+
+
+header{
+    color: rgb(24, 24, 24);
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 400px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px rgb(148, 193, 109), 0 0 0.1em rgba(177, 177, 239, 0.477), 0 0 0.1em rgba(222, 236, 230, 0.698);
+    font-weight: bolder;
+  }
+
+  .texto_primeiro{
+    width: 800px;
+    height: 200px;
+    font-size: 23px;
+    padding: 20px;
+    background-color: rgb(25, 24, 24);
+    color: antiquewhite;
+    border-radius: 5px;
+    border:solid;
+    box-shadow: 2px 4px  3px  rgb(117, 212, 117);
+      border-color: green;
+      color: antiquewhite;
+      display: flex;
+      margin-bottom: 20px;
+      margin-left: 150px;
+ 
+
+  }
+  .primeira{
+    margin-left: 100px;
+    width: 300px;
+   
+    display: flex;
+flex-direction: row;
+
+  }
+ 
+ 
+  .segunda{
+  
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+padding: 20px;
+margin-left: 100px;
+
+  }
+
+
+  .texto_segundo{
+    width: 800px;
+    height: 180px;
+    font-size: 23px;
+    padding: 20px;
+    background-color: rgb(25, 24, 24);
+    color: antiquewhite;
+    border-radius: 5px;
+    border:solid;
+    box-shadow: 2px 4px  3px  rgb(117, 212, 117);
+      border-color: green;
+      color: antiquewhite;
+      display: flex;
+      margin-bottom: 20px;
+      margin-left: 150px; 
+  }
+  .um{
+   margin-right: 20px;
+  }
+ 
+  .tres{
+    margin-left: 20px;
+  }
+ 
+  .quatro{
+    margin-right: 20px;
+
+  }
+
+  .seis{
+    margin-left: 20px;
+  }
