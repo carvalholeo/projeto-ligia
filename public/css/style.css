@@ -1,146 +1,128 @@
+:root {
+  --body-background: rgb(78, 75, 75);
+  --amarelo: rgb(250, 243, 46);
+  --azul-desconhecido: rgba(177, 177, 239, 0.477);
+  --verde-acizentado: rgba(222, 236, 230, 0.698);
+  --text-color-light: antiquewhite;
+  --text-color-dark: black;
+  --chumbo: rgb(24, 24, 24);
+  --amarelo-com-transparencia: rgba(255, 217, 0, 0.73);
+  --border-radius: 0.5rem;
+
+  font-size: 16px;
+}
+
 * {
-  
-  font-family: 'Wix Madefor Text', sans-serif;
+  font-family: "Wix Madefor Text", sans-serif;
   box-sizing: border-box;
+}
 
+body {
+  background-color: var(--body-background);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.header {
+  color: rgb(24, 24, 24);
+  margin-top: 20px;
+  width: 30%;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px var(--amarelo),
+    0 0 0.1em var(--azul-desconhecido), 0 0 0.1em var(--verde-acizentado);
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.header > h1, .header > h2 {
+  display: inline;
 }
 
 
-
-
-body{
-  
-  background-color:  rgb(78, 75, 75);
-  
-
-  
-}
-
-header{
-    color: rgb(24, 24, 24);
-    margin-left: 40px;
-    margin-top: 20px;
-    width: 400px;
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px rgb(250, 243, 46), 0 0 0.1em rgba(177, 177, 239, 0.477), 0 0 0.1em rgba(222, 236, 230, 0.698);
-    font-weight: bolder;
-    display: block;;
-  }
-
-
-
-
-nav{
-
-  width: 200px;
-  height: 150px;
-margin-left: 20px;
-
-
-}
-ul{
-  background-color:  rgb(25, 24, 24);
-  border-radius: 5px;
-  border:solid;
-box-shadow: 2px 3px 3px rgb(117, 212, 117);
-  border-color: green;
-  margin-left: 20px;
-}
-
-.lista > a {
-  color: antiquewhite;
-}
-main > a:link, main a:visited {
-  text-decoration: none;
-  color: #ddd;
-}
- .lista:hover{
-  font-size: 1.5rem;
- }
-
-
-.conteudo{
-  background-color:  rgb(25, 24, 24);
-  border-radius: 5px;
-  border:solid;
-position: block;
-  border-color: rgb(246, 218, 36);
-  color: antiquewhite;
- 
-
-  margin-left: 320px;
-margin-top: -340px;
-  padding: 25px;
-  width: 70%;
-  height:400px ;
-  font-size: 25px;
-}
-.texto{
-  margin-left: 400px;
-  margin-top: -10px;
-}
-
-
-.education{
-  background-color: yellow;
-  font-size: 3rem;
-  color: black;
-  width: 280px;
-  position: absolute;
-
-  margin-left: 300px;
-  height: 60px;
-  margin-top: 50px;
-  border-radius: 8px;
-
-}
-
-
-
-.barra_um{
-position: inherit;
-
-margin-left: 60px;
-color: antiquewhite;
-width: 150px;
-margin-top: 50px;
-}
-.barra_dois{
-position: relative;
-margin-left: 80px;
-color: antiquewhite;
-width: 150px;
-margin-top: 50px;
-}
-.instiuicoes{
-  border: solid yellow;
-  border-radius: 5px;
-  width: 40%;
-  margin-left: 590px;
-display: flex;
-margin-top: 30px;
-}
-.dev{
-  color: rgb(10, 8, 6);
-  font-size: 25px;
-  margin-top: -420px;
-  width: 52%;
-  background-color: rgba(255, 217, 0, 0.73);
+.conteudo {
+  background-color: var(--chumbo);
+  border-radius: var(--border-radius);
   border: solid;
-  border-radius: 8px;
+  display: flex;
+  border-color: var(--amarelo);
+  color: var(--text-color-light);
+  padding: 1.5rem;
+  width: 70%;
+  font-size: 1.5rem;
+  align-items: center;
 }
-.curso_letras{
+
+.conteudo .texto {
+  line-height: 3rem;
+}
+
+.education {
+  background-color: var(--amarelo);
+  font-size: 3rem;
+  color: var(--text-color-dark);
+  position: absolute;
+  height: 60px;
+  border-radius: var(--border-radius);
+}
+
+.barra_um {
+  position: inherit;
+
+  margin-left: 60px;
+  color: var(--text-color-light);
+  width: 150px;
+  margin-top: 50px;
+}
+
+.barra_dois {
+  position: relative;
+  margin-left: 80px;
+  color: var(--text-color-light);
+  width: 150px;
+  margin-top: 50px;
+}
+
+.instiuicoes {
+  border: solid var(--amarelo);
+  border-radius: var(--border-radius);
+  width: 30%;
+
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.dev {
+  color: var(--chumbo);
+  font-size: 25px;
+  margin-top: 3rem;
+  width: 45%;
+  background-color: var(--amarelo-com-transparencia);
+  border: solid;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.curso_letras {
   margin-left: 10px;
 }
-.bt_cgi{
-  border-radius: 8px;
+
+.bt_cgi {
+  border-radius: var(--border-radius);
   margin-left: 350px;
   margin-top: -400px;
   width: 200px;
   height: 50px;
 }
-.ref{
+
+.ref {
   width: 220px;
   margin-left: 680px;
 }
-
