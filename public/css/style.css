@@ -31,29 +31,21 @@ main {
   align-items: flex-start;
 }
 
-
 .header {
   color: rgb(24, 24, 24);
   margin-top: 20px;
   width: 30%;
   font-size: 2rem;
-  text-shadow: 1px 1px 1px var(--amarelo),
-    0 0 0.1em var(--azul-desconhecido), 0 0 0.1em var(--verde-acizentado);
+  text-shadow: 1px 1px 1px var(--amarelo), 0 0 0.1em var(--azul-desconhecido),
+    0 0 0.1em var(--verde-acizentado);
   font-weight: bolder;
   display: inline-block;
 }
 
-.header > h1, .header > h2 {
+.header > h1,
+.header > h2 {
   display: inline;
 }
-
-/* main section {
-  display: flex;
-} */
-
-/* main section:last-child {
-  order: 1;
-} */
 
 .conteudo {
   background-color: var(--chumbo);
