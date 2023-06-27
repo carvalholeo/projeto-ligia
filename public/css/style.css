@@ -190,3 +190,149 @@ main {
   background-color: var(--amarelo);
   color: var(--chumbo);
 }
+
+.contact form textarea {
+  width: 25rem;
+  height: 5rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.contact form button {
+  min-width: 4rem;
+  min-height: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+@media (max-width: 1920px) {
+  :root {
+    font-size: 24px;
+  }
+
+  .education {
+    margin-bottom: 2rem;
+  }
+
+  .instiuicoes {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 14px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dev {
+    order: 3;
+    width: 70%;
+  }
+
+  .barra-pai, .others {
+    font-size: 1.5rem;
+  }
+
+  .instiuicoes {
+    width: 70%
+  }
+
+  .header {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .contact {
+    order: 10;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .barra-pai {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    font-size: 10px;
+  }
+
+  .barra-pai, .others {
+    font-size: 1.6rem;
+  }
+
+  .contact form button {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 3rem;
+  }
+
+  .others {
+    width: 80%
+  }
+
+  .header, .conteudo, .dev, .instiuicoes, .contact {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .dev, .conteudo, .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact form textarea {
+    height: 10rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .dev, .conteudo, .contact h2 {
+    font-size: 2rem;
+  }
+
+  .bt_cgi,  .ref > ul > li > a, .contact form button{
+    min-height: 5rem;
+    font-size: 2rem;
+  }
+}
+
+@media print {
+  .bt_cgi,  .ref > ul > li > a, .contact{
+    display: none;
+  }
+
+  .barra-pai .barra, .conteudo {
+    color: var(--chumbo);
+  }
+}
+
+@media (max-width: 280px) AND (orientation: portrait) {
+  .dev, .conteudo, .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .bt_cgi,  .ref > ul > li > a, .contact form button{
+    min-height: 3rem;
+    font-size: 1.5rem;
+  }
+}
